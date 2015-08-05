@@ -13,7 +13,7 @@ body {
 	text-shadow: 0 0 10px #bbb;
 }
 #logodiv {
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);		
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);		
     background-position: -42px -44px;
 	width: 194px;
 	height: 55px;
@@ -54,29 +54,29 @@ table#header_t td {
 	margin-bottom: 30px;
 }
 table#header_t .menu li a {
-    background: none!important;
+    background: none;
 	width: 120px!important;
     height: 30px!important;
     border: 1px solid #05bf54!important;
     border-radius: 40px!important;
     padding-top: 15px!important;
-    color: #05bf54!important;
+    color: #05bf54;
 }
 
 table#header_t .menu .active a, table#header_t .menu .active a:hover {
-    background: #05bf54;
-    border-radius: 40px;
-	width: 120px;
-    height: 30px;
-    padding-top: 15px;
+    background: #009e03!important;
+    border-radius: 40px!important;
+	width: 120px!important;
+    height: 30px!important;
+    padding-top: 15px!important;
 }
-.menu .active2 {
-    background: #05bf54;
-    border-radius: 40px;
-	width: 120px;
-    height: 30px;
-    padding-top: 15px;
-}
+/*.menu .active2 {
+    background: #05bf54!important;
+    border-radius: 40px!important;
+	width: 120px!important;
+    height: 30px!important;
+    padding-top: 15px!important;
+}*/
 td.header-nav-bottom > ul.menu > li.menu-item-default {
     width: 120px;
     margin: 0 20px;
@@ -120,7 +120,7 @@ table#header_t .active, table#header_t .active a {
 .b-user-menu__strawberry .switchery {
 	width: 30px;
     height: 30px;
-    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
     background-color: #fff!important;
     border-radius: 100%;
     opacity: 1;
@@ -168,7 +168,7 @@ table#header_t .active, table#header_t .active a {
 	float: none;
 	left: 222px;
 	top: -42px;
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);				
     background-position: 1px -2px;
 	background-color: #fff;
 	border-radius: 100%;
@@ -232,38 +232,38 @@ table#header_t .active, table#header_t .active a {
 	margin: 0 40px;
 }
 .i-sprite_users_menu-settings, .i-sprite--users__menu-settings {
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);				
     background-position: -5px -210px;
 	width: 28px;
     height: 28px;
 }
 .i-sprite_users_menu-feed, .i-sprite--users__menu-feed{
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);				
     background-position: -5px -73px;
 	width: 28px;
     height: 28px;
 }
 
 .i-sprite_users_menu-my-messages, .i-sprite--users__menu-my-messages{
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);				
     background-position: -5px -42px;
 	width: 28px;
     height: 28px;
 }
 .i-sprite_users_menu-my-comments, .i-sprite--users__menu-my-comments{
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);				
     background-position: -5px -105px;
 	width: 28px;
     height: 28px;
 }
 .i-sprite_users_menu-interested, .i-sprite--users__menu-interested{
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);				
     background-position: -5px -138px;
 	width: 28px;
     height: 28px;
 }
 .i-sprite_users_menu-saved, .i-sprite--users__menu-saved{
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);				
     background-position: -5px -171px;
 	width: 28px;
     height: 28px;
@@ -379,7 +379,7 @@ td.menu-best-comm > div.menu-comm-head > h6 {
 	text-align: center;
 }
 .best_comm:before {
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);		
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);		
     background-position: 275px -5px;
 	content: ' ';
 	padding: 10px 20px 11px;
@@ -403,7 +403,7 @@ div.menu-top-tags {
 	
 }
 div.menu-top-tags:before {
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);		
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);		
     background-position: 162px -5px;
 	content: ' ';
 	padding: 13px 21px 12px;
@@ -457,12 +457,12 @@ div.menu-cont div.header-nav-top:hover {
 }
 div.header-search-box > form:after {
 	content: " ";
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
     background-position: 113px -47px;
     position: relative;
     left: 270px;
     top: -23px;
-    padding: 10px;
+    padding: 10px 10px 0px;
 }
 
 
@@ -501,45 +501,42 @@ div.header-search-box > form:after {
 }
 .b-feed-panel__toolbar>div>a[data-type="date"]:after{
 	content: ' ';
-    background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+    background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
     background-position: -44px -140px;
 	padding: 13px 21px 7px 0;
     margin-left: 10px;
 }
-.popup-box {
-    background-color: #fff;
-    box-shadow: 0 1px 1px rgba(0,0,0,.15);
-	border-radius: 0 0 3px 3px!important
-}
+
+
+
+
+
+
 
 /*~~~~~~~~~~~~~~~ Posts ~~~~~~~~~~~~~*/
 .pg_wrap {
 	background: none!important;
 }
-.popup-box>div.ppb-arrow {
-	display: none;
-}
-
 .i-sprite_b-rating_up, .i-sprite--b-rating__up {
-	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
     background-position: -148px -9px;
     width: 32px;
     height: 26px;
 }
 .i-sprite_b-rating_up-active, .i-sprite--b-rating__up-active {
-	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
     background-position: 271px -62px;
     width: 32px;
     height: 26px;
 }
 .i-sprite_b-rating_down, .i-sprite--b-rating__down {
-	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
     background-position: -190px -9px;
     width: 32px;
     height: 26px;
 }
 .i-sprite_b-rating_down-active, .i-sprite--b-rating__down-active {
-	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
     background-position: 238px -62px;
     width: 32px;
     height: 26px;
@@ -746,8 +743,145 @@ div.header-message-signup {
 	.b-story__footer {width: auto;}
 }
 
+.b-comment__tool-link {
+    padding: 9px;
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 112px -5px;
+	font-size: 0px;
+    margin: 1px 4px;
+    height: 0px;
+}
+.i-sprite_comments_save, .i-sprite--comments__save {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 111px -31px;
+    width: 16px;
+    height: 15px;
+    margin: 2px 4px;
+}
+.i-sprite--comments__save:hover {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 110px -76px;
+    width: 16px;
+    height: 15px;
+    margin: 2px 4px;
+}
+.i-sprite_comments_save_active, .i-sprite--comments__save_active {
+    background-position: 110px -76px;
+}
+.i-sprite_comments_rating-up, .i-sprite--comments__rating-up {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 110px -120px;
+    width: 16px;
+    height: 12px;
+}
+.i-sprite--comments__rating-up:hover {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 110px -99px;
+    width: 16px;
+    height: 12px;
+}
+.i-sprite_comments_rating-up-active, .i-sprite--comments__rating-up-active{
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 110px -99px;
+    width: 16px;
+    height: 12px;
+}
+.i-sprite_comments_rating-down, .i-sprite--comments__rating-down {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 90px -120px;
+    width: 16px;
+    height: 12px;
+}
+.i-sprite--comments__rating-down:hover {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 90px -99px;
+    width: 16px;
+    height: 12px;
+}
+.i-sprite_comments_rating-down-active, .i-sprite--comments__rating-down-active {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 90px -99px;
+    width: 16px;
+    height: 12px;
+}
+.b-comment__rating li {
+    padding: 4px 0;
+}
+.b-comment__rating-up {
+    margin-right: 6px;
+}
+.b-story-info__main {
+	font: 14px Roboto;
+}
+.b-comment__header, .b-comment__rating-count {
+    font-weight: 900;
+	font: 14px Roboto;
+}
+.b-comment__user a {
+	color: #28adaa;
+	margin-right: 15px;
+}
+.b-comment__user a:hover {
+	color: #28adaa;
+	text-shadow: 0 0 10px #bbb;
+}
+.b-comment__control {
+	color: #28adaa;
+	font: 14px Roboto;
+	transition: all .3s;
+}
+.b-comment__control:hover {
+	color: #28adaa;
+	text-shadow: 0 0 10px #bbb;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~ Social ~~~~~~~~~~~~~~*/
+.i-sprite_social_vk, .i-sprite--social__vk, .i-sprite_social_vk_hover_yes {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 309px -111px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.i-sprite--social__vk:hover {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 332px -111px;
+    width: 20px;
+}
+.i-sprite_social_twitter, .i-sprite--social__twitter, .i-sprite_social_twitter_hover_yes {
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438786029150779241.png);
+    background-position: 241px -111px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+
+}
+.i-sprite--social__twitter:hover {
+	background-position: -5px -415px;
+    width: 20px;
+}
+.i-sprite_social_save, .i-sprite--social__save {
+    border-radius: 4px;
+}
+.i-sprite_social_saved, .i-sprite--social__saved {
+    border-radius: 4px;
+}
+/*~~~~ Кнопка лицокниги почему-то не пашет :( ~~*/
+
+/*~~~~~~~~~~~~~~~~~~~ Social End ~~~~~~~~~~~~~~*/
 
 /* ~~~~~~~~~~~~~~~~~~~ Auth ~~~~~~~~~~~~~~~*/
 
@@ -828,6 +962,87 @@ table.menu-auth-tabs .menu-auth-tab-signup {
 div#login_block_register_form > form#form2 {
     margin: 90px 0 60px;
 }
+
+/*~~~~~~~~~~~~~~~~ Auth end ~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~ Я не знаю как это назвать ~~~~~~~~*/
+.b-story__rating-pluses {
+    background-color: #7ed321;
+	border-radius: 4px 0 0 4px;
+    border-right: none;
+}
+.b-story__rating-minuses {
+	background-color: #f6265c;
+	border-radius: 4px;
+}
+
+/* ~~~~~~~~~~~~~~~ Окно нового комментария ~~~~~~~~~ */
+.b-comments-reply {
+	background: #fff;
+    max-width: 800px;
+	padding: 20px;
+}
+.b-comments__reply {
+	box-shadow: 0px 1px 1px rgba(0,0,0,.15)!important;
+    margin-right: 3px;
+}
+.b-comments-reply__editable {
+    border: 1px solid #ccc;
+}
+.b-comments-reply__editable:focus {
+    box-shadow: 0 1px 4px #ccc;
+    border-color: #ccc;
+}
+.b-button_type_default {
+	border: 0;
+	background: #05bf54!important;
+    color: #fff!important;
+    text-shadow: none!important;
+    box-shadow: 0 4px 0px 0px #009e03!important;
+	margin-bottom: 4px;
+    height: 35px;
+    width: 160px;
+	font: 14px Roboto;
+	transition: none;
+}
+.b-button_type_default:hover {
+	margin-top: 4px;
+	margin-bottom: 0px;
+    box-shadow: 0 -4px 0px 0px #fff!important;
+}
+.b-comments-reply__attach-files {
+	color: #28adaa;
+	font: 14px Roboto;
+    margin: 7px 20px;
+	transition: all .3s;
+}
+.b-comments-reply__attach-files:hover {
+    background: none;
+    text-shadow: 0 0 10px #bbb;
+}
+.b-comments-reply__controls {
+    padding-top: 20px;
+}
+/* ~~~~~~~~~~~~~~~ Окно нового комментария Конец ~~~~~~~~~ */
+
+
+
+
+
+
+/* ~~~~~~~~~~ Реклама портит вид, Админ, извини ._. ~~~~~~~~~~*/
+.inner_wrap:nth-child(3) tbody tr td:nth-child(2) table {
+	display: none;
+}
+/* ~~~~~~~~~~~~~~~ Правый блок / Ваши подписки ~~~~~~~~~~*/
+
+/* ~~~~~~~~~~~~~~~ Правый блок / Ваши подписки Конец ~~~~~~~~~~*/
+
+
+/* ~~~~~~ Центральный блок / Информация о пользователе ~~~~~~~~*/
+
+/* ~~~ Центральный блок / Информация о пользователе Конец ~~~~*/
+
 }
 
 @-moz-document url-prefix("http://pikabu.ru/story/") {
