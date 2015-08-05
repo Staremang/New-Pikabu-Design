@@ -1,0 +1,752 @@
+@-moz-document domain("pikabu.ru") {
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,,900&subset=latin,cyrillic);
+body {
+	background-color: #f9f9fb !important;
+}
+.info a {
+    text-decoration: none;
+    color: #28adaa;
+	transition: all .3s;
+}
+.info a:hover {
+    color: #28adaa;
+	text-shadow: 0 0 10px #bbb;
+}
+#logodiv {
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);		
+    background-position: -42px -44px;
+	width: 194px;
+	height: 55px;
+	top: 17px;
+}
+#logodiv img {
+	display: none;
+}
+.tag_count {
+	background: #f6265c;
+	color: #fff;
+	padding: 1px 10px;
+	font: 12px tahoma, arial, sans-serif;
+	border-radius: 18px;
+}
+.tag {
+	font-size: 12px;
+	padding: 4px 8px 4px;
+    margin: 0 2px;
+	text-shadow: 0 1px 0 white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C4C4C4;
+}
+.tag:hover {
+	background: #DDD;
+}
+table.inner_wrap {
+	margin-top: 5px;
+}
+.header-cont {
+	background: #fff;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+    height: 90px;
+}
+
+table#header_t td {
+	margin-bottom: 30px;
+}
+table#header_t .menu li a {
+    background: none!important;
+	width: 120px!important;
+    height: 30px!important;
+    border: 1px solid #05bf54!important;
+    border-radius: 40px!important;
+    padding-top: 15px!important;
+    color: #05bf54!important;
+}
+
+table#header_t .menu .active a, table#header_t .menu .active a:hover {
+    background: #05bf54;
+    border-radius: 40px;
+	width: 120px;
+    height: 30px;
+    padding-top: 15px;
+}
+.menu .active2 {
+    background: #05bf54;
+    border-radius: 40px;
+	width: 120px;
+    height: 30px;
+    padding-top: 15px;
+}
+td.header-nav-bottom > ul.menu > li.menu-item-default {
+    width: 120px;
+    margin: 0 20px;
+    height: 45px;
+    bottom: 20px;
+}
+table#header_t .active, table#header_t .active a {
+	text-shadow: none;
+    width: 120px;
+    margin: 0 20px;
+    height: 45px;
+    bottom: 9px;
+}
+
+.b-user-menu {
+	border-radius: 3px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+    height: 570px;
+}
+.b-user-menu__logo {
+	margin-left: 110px;
+    border-radius: 100%;
+    position: absolute;
+    top: 190px;
+	width: 90px;
+}
+.b-user-menu__avatar {
+	border-radius: 100%;
+	border: solid 5px white;
+}
+
+/*~~~~~~~~~~~~ Strawberry ~~~~~~~~~~~~~~~~~~~*/
+.b-user-menu__strawberry {
+	position: relative;
+    top: -71px;
+    right: 73px;
+}
+.b-user-menu__strawberry .switchery>small {
+	display: none;
+}
+.b-user-menu__strawberry .switchery {
+	width: 30px;
+    height: 30px;
+    background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+    background-color: #fff!important;
+    border-radius: 100%;
+    opacity: 1;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15)!important;
+    border: 5px solid #fff!important;
+}
+.b-user-menu__strawberry .switchery[style*="rgb(78, 144, 186)"] {
+    background-position: -38px -6px;
+}
+.b-user-menu__strawberry .switchery[style*="rgb(204, 206, 209)"] {
+    background-position: 203px -62px;
+}
+
+/*~~~~~~~~~~~~ Strawberry End~~~~~~~~~~~~~~~~*/
+
+.b-user-menu__logo:before, .b-user-menu__logo:after {
+	display: none;
+}
+.b-user-menu__main {
+	width: 300px;
+	border: none;
+	border-radius: 3px;
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/143849605613319664.jpg);
+	background-size: 300px 130px;
+}
+.b-user-menu__header {
+	background: #fff;
+	height: 100px;
+	margin: 130px 0 0 0;
+	text-align: center;
+	border-bottom: none;
+}
+.b-user-menu__header a {
+	width: auto;
+	position: relative;
+    top: 45px;
+    left: 3px;
+	z-index: 9;
+	font: 13pt/20pt Roboto;
+	font-weight: 900;
+}
+.b-user-menu__logout {
+	width: 40px;
+	height: 40px;
+	float: none;
+	left: 222px;
+	top: -42px;
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+    background-position: 1px -2px;
+	background-color: #fff;
+	border-radius: 100%;
+    opacity: 1;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+
+}
+.b-user-menu__logout:before {
+	content: 'Выход';
+	top: 44px;
+    left: -1px;
+    position: absolute;
+	color: #9b9b9b;
+}
+.b-user-menu-list {
+	background: #fff;
+	margin: 0;
+}
+.i-sprite_users_menu-rating, .i-sprite--users__menu-rating {
+	display: none;
+}
+.b-user-menu-list li:nth-child(1) {
+	position: relative;
+	top: -220px;
+	color: #fff;
+	width: 75px;
+	padding: 0 40px;
+	font: 13pt/20pt Roboto;
+	font-weight: 900;
+	text-align: center;
+	border-right: 1px solid #fff;
+}
+.i-sprite_users_menu-subscribers, .i-sprite--users__menu-subscribers {
+	display: none;
+}
+.b-user-menu-list li:nth-child(2) {
+	position: relative;
+	top: -272px;
+	left: 156px;
+	color: #fff;
+	width: 110px;
+	padding: 0 16px;
+	font: 13pt/20pt Roboto;
+	font-weight: 900;
+	text-align: center;
+}
+.b-user-menu-list li:nth-child(3) {
+	border-top: 2px solid #d1d8da;
+}
+.b-user-menu-list li:nth-child(9) {
+	border-bottom: 2px solid #d1d8da;
+}
+.b-user-menu-list li:nth-child(5) {
+	display: none;
+}
+.b-user-menu-list li:nth-child(n+3) {
+	top: -130px;
+	position: relative;
+    padding: 8px 0 8px 30px;
+	font: 13pt/20pt Roboto;
+	margin: 0 40px;
+}
+.i-sprite_users_menu-settings, .i-sprite--users__menu-settings {
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+    background-position: -5px -210px;
+	width: 28px;
+    height: 28px;
+}
+.i-sprite_users_menu-feed, .i-sprite--users__menu-feed{
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+    background-position: -5px -73px;
+	width: 28px;
+    height: 28px;
+}
+
+.i-sprite_users_menu-my-messages, .i-sprite--users__menu-my-messages{
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+    background-position: -5px -42px;
+	width: 28px;
+    height: 28px;
+}
+.i-sprite_users_menu-my-comments, .i-sprite--users__menu-my-comments{
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+    background-position: -5px -105px;
+	width: 28px;
+    height: 28px;
+}
+.i-sprite_users_menu-interested, .i-sprite--users__menu-interested{
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+    background-position: -5px -138px;
+	width: 28px;
+    height: 28px;
+}
+.i-sprite_users_menu-saved, .i-sprite--users__menu-saved{
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);				
+    background-position: -5px -171px;
+	width: 28px;
+    height: 28px;
+}
+.b-user-menu-list a {
+	color: #28adaa;
+}
+.b-user-menu-list__icon {
+	margin-right: 15px;
+}
+div.menu-add-btn {
+    width: 240px;
+    height: 0px;
+    right: -30px;
+    top: -93px;
+}
+
+.addlink_button {
+    height: 50px;
+	background: #05bf54;											box-shadow: 0 4px 0px 0px #009e03;
+}
+.addlink_button:hover {
+	position: relative;
+	top: 4px;
+	background: #05bf54;
+	box-shadow: 0 -4px 0px 0px #fff;
+	color: #fff;
+}
+.addlink_button img, .addlink_button div {
+	display: none;
+}
+
+.addlink_button:before {
+	content: 'Добавить новость';
+	position: relative;
+	left: 40px;
+	top: 13px;
+	font: 19px Tahoma, Arial, sans-serif;
+}
+div.menu-block, table.menu-block {
+	background-color: #fff !important;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+	border: none;
+	border-radius: 3px;
+    padding: 0 40px;
+	width: 220px;
+}
+td.menu-block-title {
+    background-color: #fff;
+}
+.rating_bl {
+	font: 16px Tahoma, Arial, sans-serif;
+    color: #4a4a4a;
+    text-shadow: none;
+    padding: 55px 0px 20px 0px;
+    border-bottom: 1px solid;
+    border-bottom-color: #dbdbdb;
+	width: 100%;
+}
+td.menu-best-comm > div.menu-story-link {
+	padding: 15px 0;
+	text-align: center;
+	width: 220px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+td.menu-best-comm > div.menu-story-link > a {
+	font: 16px Roboto;
+    color: #28adaa;
+    text-decoration: none;
+	transition: all 0.3s;
+}
+td.menu-best-comm > div.menu-story-link > a:hover {
+	text-shadow: 0 0 10px #999;
+}
+.info_c {
+	font: 0px Roboto!important;
+	margin-left: 40px;
+	margin-top: 5px;
+    width: 100%;
+}
+.info {
+    line-height: 30px!important;
+    font: 14px Roboto;
+}
+td.menu-best-comm > div.menu-comm-desc {
+	width: 170px!important;
+	font: 14px Roboto;
+	padding: 2px 0 10px 50px;
+}
+td.menu-best-comm > div.menu-comm-head > h6 {
+	font: 16px Roboto;
+	font-weight: 900;
+	margin-top: 30px;
+	margin-left: -50px;
+	
+	position: absolute;
+}
+.info_c a {
+    color: #28adaa;
+	font: 12px Roboto;
+    padding: 0 0 0 10px;
+}
+.comment_msg a {
+    color: #28adaa;
+}
+.info_c a:hover {
+	text-shadow: 0 0 10px #999;
+    color: #28adaa;
+    padding: 0 0 0 10px;
+}
+.login_f .rating_bl {
+	text-align: center;
+}
+.best_comm:before {
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);		
+    background-position: 275px -5px;
+	content: ' ';
+	padding: 10px 20px 11px;
+	position: relative;
+	left: 90px;
+	top: 30px;
+}
+span.menu-block-title-right {
+	display: none;
+}
+
+div.menu-top-tags .menu-top-tags-cont > div {
+    margin-top: 16px;
+}
+div.menu-top-tags {
+	background-color: #fff !important;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+	border-radius: 3px;
+    padding: 0 40px;
+	width: 220px;
+	
+}
+div.menu-top-tags:before {
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);		
+    background-position: 162px -5px;
+	content: ' ';
+	padding: 13px 21px 12px;
+	position: relative;
+	left: 90px;
+	top: 30px;
+}
+.small_text a {
+	color: #28adaa;
+    text-decoration: none;
+    font: normal 16px Roboto;
+	transition: all .3s;
+}
+.small_text a:hover {
+	text-shadow: 0 0 10px #bbb;
+}
+td.menu-best-comm {
+	padding: 0 0 15px 0!important;
+}
+td.menu-block-small-txt {
+	padding-left: 0px!important;
+}
+td.menu-block-small-txt > img {
+    width: 220px!important;
+	padding-left: 0px!important;
+}
+div.menu-cont div.header-nav-top {
+    height: 25px!important;
+    margin-top: -88px!important;
+    opacity: 0;
+	transition: .5s;
+}
+
+div.menu-cont div.header-nav-top:hover {
+	opacity: 1;
+}
+.search_block {
+	height: 34px;
+    background: none;
+    border: 1px solid #dadada;
+    border-radius: 3px!important;
+    width: 287px!important;
+}
+.search_btn {
+	height: 38px;
+    padding-top: 0px;
+	left: -57px;
+    position: relative;
+	opacity: 0;
+	z-index: 100;
+}
+div.header-search-box > form:after {
+	content: " ";
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+    background-position: 113px -47px;
+    position: relative;
+    left: 270px;
+    top: -23px;
+    padding: 10px;
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~ Feed panel ~~~~~~~~~~~~~~*/
+.b-feed-panel {
+	background: #fff;
+	border-radius: 3px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+    padding: 12px 0;
+    margin: 16px 8px 0 93px;
+	font: 14px Roboto;
+}
+.b-feed-panel a {
+    border: none;
+}
+.b-feed-panel__toolbar>div>span {
+	display: none;
+}
+.b-feed-panel__toolbar>div>a[data-type="sort"], .b-feed-panel__toolbar>div>a[data-type="mode"] {
+	background: #05bf54;
+	color: #fff;
+	border-radius: 3px;
+	padding: 12px;
+	transition: .1s;
+}
+.b-feed-panel__toolbar>div>a[data-type="sort"]:hover, .b-feed-panel__toolbar>div>a[data-type="mode"]:hover {
+	background: #009e03;
+}
+.b-feed-panel__toolbar>div>a[data-type="sort"]:before {
+	Content: 'По ';
+}
+.b-feed-panel__toolbar>div>a[data-type="date"] {
+	font-size: 0px;
+}
+.b-feed-panel__toolbar>div>a[data-type="date"]:after{
+	content: ' ';
+    background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+    background-position: -44px -140px;
+	padding: 13px 21px 7px 0;
+    margin-left: 10px;
+}
+.popup-box {
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+	border-radius: 0 0 3px 3px!important
+}
+
+/*~~~~~~~~~~~~~~~ Posts ~~~~~~~~~~~~~*/
+.pg_wrap {
+	background: none!important;
+}
+.popup-box>div.ppb-arrow {
+	display: none;
+}
+
+.i-sprite_b-rating_up, .i-sprite--b-rating__up {
+	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+    background-position: -148px -9px;
+    width: 32px;
+    height: 26px;
+}
+.i-sprite_b-rating_up-active, .i-sprite--b-rating__up-active {
+	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+    background-position: 271px -62px;
+    width: 32px;
+    height: 26px;
+}
+.i-sprite_b-rating_down, .i-sprite--b-rating__down {
+	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+    background-position: -190px -9px;
+    width: 32px;
+    height: 26px;
+}
+.i-sprite_b-rating_down-active, .i-sprite--b-rating__down-active {
+	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/1438696383115818724.png);
+    background-position: 238px -62px;
+    width: 32px;
+    height: 26px;
+}
+div.story_head span {
+	display: none;
+}
+a.story_authors {
+	background: #f6265c!important;
+	color: white!important;
+	padding: 3px 7px!important;
+	border-radius: 3px!important;
+    text-decoration: none!important;
+	font: 10pt sans-serif!important;
+}
+a.story_link {
+	color: #28adaa!important;
+}
+div.story_head {
+	margin: 5px 0;
+}
+.pg_click {
+	background: none;
+}
+.pg_click:hover {
+	background: none;
+}
+.pg {
+	background-color: #fff;
+    margin-left: 18px;
+	padding-left: 0;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+	border-radius: 3px 3px 0 3px;
+}
+.b-story__content_type_text {
+    font: 16px Roboto;
+	border: none;
+	background-color: #fff;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15), 0 3px 1px -2px rgba(0,0,0,.15) inset;
+    width: 800px;
+    margin-top: 0px;
+    margin-left: 91px;
+    margin-right: 3px;
+    padding: 10px 16px 15px;
+	border-radius: 0;
+}
+
+.b-story__footer {
+    position: relative;
+	margin-left: 99px;
+    margin-top: 0;
+	margin-right: 3px;
+    padding-left: 0;
+	background-color: #fff;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+    border-radius: 0 0 3px 3px;
+	width: 760px;
+	top: -4px;
+    padding: 5px 20px;
+	
+}
+
+.sv_img {
+	width: 61px;
+	height: 27px;
+    padding-right: 0;
+	transition: all .3s;
+}
+.sv_img:hover {
+	box-shadow: 0 0 10px #bbb;
+}
+.showvideo[attr="1"] {
+	content: url('http://cs6.pikabu.ru/images/previews_comm/2015-08_1/143860783362239668.png')
+}
+.showvideo[attr="0"] {
+	content: url('http://cs6.pikabu.ru/images/previews_comm/2015-08_1/143860783351683281.png')
+}
+.showpic[attr="1"]{
+	content: url('http://cs6.pikabu.ru/images/previews_comm/2015-08_1/143860783321170463.png')
+}
+.showpic[attr="0"]{
+	content: url('http://cs6.pikabu.ru/images/previews_comm/2015-08_1/143860783218503834.png')
+}
+.showtext[attr="1"]{
+	content: url('http://cs6.pikabu.ru/images/previews_comm/2015-08_1/1438607833411242942.png')
+}
+.showtext[attr="0"]{
+	content: url('http://cs6.pikabu.ru/images/previews_comm/2015-08_1/143860783335646558.png')
+}
+
+.b-story__content_type_media {
+    margin-left: 99px;
+	padding-left: 0px;
+    margin-right: 3px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+    margin-top: 0;
+}
+
+
+/*~~~~~~~~~~~~ Notification ~~~~~~~~~~~~~*/
+.b-user-menu-list__count {
+	background-color: #f6265c!important;
+    border-radius: 30px!important;
+	color: #fff!important;
+    font-weight: 400;
+    padding: 5px 10px;
+}
+/*~~~~~~~~~~~~ Notification End ~~~~~~~~~~~~~*/
+
+
+
+/*~~~~~~~~~~~~ Comments ~~~~~~~~~~~~~~~~~~~~~*/
+.b-social, .b-story__hr, .b-story-info {
+	background: #fff;
+	box-shadow: 1px 0px 1px -1px rgba(0, 0, 0, .15), -1px 0px 1px -1px rgba(0, 0, 0, .15);
+	border: none!important;
+    margin-left: 95px;
+    margin-right: 3px;
+    width: auto;
+											
+}
+.b-social {
+    padding: 15px 20px;
+}
+.b-story-info {
+    padding: 10px 20px;
+}
+
+@media screen and (min-width: 1286px) {
+	.b-social {
+		width: 800px;			
+	}
+	.b-story__hr, .b-story-info {
+		width: 800px;
+	}
+	
+}
+.b-comments_type_main {
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .15), 0px -21px 0px -20px #e5e5e5;
+    margin: 0px 3px 0 95px;
+    padding: 20px;
+}
+
+
+.b-comment {
+	font: 14px Roboto;
+}
+.b-comments {
+    border-left: 1px solid #d8d8d8;
+}
+.b-comment__user_author_story {
+    background-color: #05bf54;
+    padding: 2px 6px 3px 10px;
+    border-radius: 20px;
+	margin-right: 10px;
+}
+.b-comment__user img {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-top: -1px;
+	border: 1px solid white;
+	
+}
+.b-comment-toggle__icon {
+    padding: 5px 2px 0;
+}
+.b-comment-toggle_type_expand {
+    padding: 0 3px;
+}
+.fa-plus-square:before {
+    content: url(http://cs6.pikabu.ru/images/previews_comm/2015-08_1/1438703469259710308.png);	
+}
+.b-comment-toggle__count {
+    line-height: 20px;
+    height: 20px;
+	color: #28adaa;
+    font-size: 14px;
+	margin: 4px;
+}
+.fa-minus-square-o:before {
+    content: url(http://cs6.pikabu.ru/images/previews_comm/2015-08_1/1438703469143156068.png);
+}
+.b-comment-toggle_type_collapse {
+	padding: 5px 0px 0;
+}
+.i-sprite_comments_show, .i-sprite--comments__show {
+	display: none;
+}
+
+
+@media screen and (max-width: 1285px) {
+	.b-comments_type_main {width: auto;}
+	.b-story__content_type_text {width: auto; max-width: none;}
+	.b-story__footer {width: auto;}
+}
+}
+
+@-moz-document url-prefix("http://pikabu.ru/story/") {
+.b-story__footer {
+	margin-bottom: 0;
+    top: 0;
+    box-shadow: 1px 0px 1px -1px rgba(0, 0, 0, .15), -1px 0px 1px -1px rgba(0, 0, 0, .15);
+	border-radius: 0;
+}
+table.inner_wrap{
+    margin-top: 0px;
+}
+}
