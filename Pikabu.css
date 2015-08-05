@@ -640,13 +640,21 @@ div.story_head {
 
 
 /*~~~~~~~~~~~~ Notification ~~~~~~~~~~~~~*/
-.b-user-menu-list__count {
+/*.b-user-menu-list__count {
 	background-color: #f6265c!important;
     border-radius: 30px!important;
 	color: #fff!important;
     font-weight: 400;
     padding: 5px 10px;
+}*/
+div.header-message-signup {
+	background: #05bf54;
+	border: 0;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, .15);
+    border-bottom-left-radius: 3px;
+    font: 15px Roboto;
 }
+
 /*~~~~~~~~~~~~ Notification End ~~~~~~~~~~~~~*/
 
 
@@ -736,6 +744,89 @@ div.story_head {
 	.b-comments_type_main {width: auto;}
 	.b-story__content_type_text {width: auto; max-width: none;}
 	.b-story__footer {width: auto;}
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~ Auth ~~~~~~~~~~~~~~~*/
+
+table.menu-auth-form {
+    font: 14px Roboto;
+    height: 240px;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+}
+
+div.menu-auth-form {
+    width: 300px;
+    margin-top: -100px;
+	border: 0;
+	background: none;
+}
+div.menu-auth-block {
+    padding: 0 30px;
+    top: 15px;
+}
+.login_block_form input.txt {
+    width: 230px;
+	border-bottom: 2px solid #DADADA!important;
+	border: 0;
+    border-radius: 0;
+    padding: 10px 2px;
+}
+.login_block_form input.txt:focus {
+    width: 230px;
+	border: 0;
+    border-radius: 0;
+    padding: 10px 2px;
+    box-shadow: none;
+}
+.submit_button, .submit_button_freshitems, .comment_desc_edit_submit_button, .moderator_add_tag_init {
+	background: #05bf54!important;
+    color: #fff!important;
+    border-radius: 3px!important;
+	border: 0!important;
+    text-shadow: none!important;
+    padding: 10px!important;
+    height: 35px!important;
+    width: 90px!important;
+    box-shadow: 0 4px 0px 0px #009e03!important;
+    transition: none!important;
+    font: 14px Tahoma, Arial, sans-serif;
+}
+.submit_button:hover, .submit_button_freshitems:hover, .comment_desc_edit_submit_button:hover, .moderator_add_tag_init:hover {
+    margin: 4px 0 -4px;
+    box-shadow: 0 -4px 0px 0px #fff!important;
+}
+div.menu-auth-block2 .menu-auth-rem {
+    padding: 20px 0 5px 0;
+}
+table.menu-auth-tabs {
+    font: 14px Roboto;
+	background: #fff;
+	border-radius: 3px 3px 0 0;
+}
+table.menu-auth-tabs .menu-auth-tab-signin {
+	padding: 9px 0 14px!important;
+	border-radius: 3px 0 0 0!important;
+	background: #fff!important;
+	box-shadow: 0px 1px 1px rgba(0,0,0,.15)!important;
+
+}
+
+table.menu-auth-tabs .menu-auth-tab-signup {
+	color: #fff!important;
+	padding: 9px 0 14px!important;
+	border-radius: 0 3px 0 0!important;
+	background: -moz-linear-gradient(top, #05bf54 0%, #05bf54 80%, #fff 100%)!important;
+    background: -webkit-linear-gradient(top, #05bf54 0%, #05bf54 80%, #fff 100%)!important;
+    background: linear-gradient(top, #05bf54 0%, #05bf54 80%, #fff 100%)!important;
+    text-shadow: none!important;
+}
+div#login_block_register_form > form#form2 {
+    margin: 90px 0 60px;
 }
 }
 
