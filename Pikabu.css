@@ -1,7 +1,22 @@
 @-moz-document domain("pikabu.ru") {
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,,900&subset=latin,cyrillic);
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,,900&subset=latin,cyrillic);*/
 body {
 	background-color: #f9f9fb !important;
+}
+
+
+/* ~~~~~~~~~~~~~~~ Отступы ~~~~~~~~~~~~~~~*/
+.pg_wrap {
+    padding: 0px 20px 0 19px!important;
+}
+.b-story__content_type_media, .b-story__footer, .b-social, .b-story__hr, .b-story-info, .b-comments_type_main, .b-comments__reply, .b-feed-panel, .b-story__content_type_text, .b-comments__next {
+    margin-right: 20px!important;
+    margin-left: 80px!important;
+}
+/* ~~~~~~~~~~~~~~~ Отступы END ~~~~~~~~~~~~~~~*/
+
+.rating {
+    padding: 10px 0;
 }
 .info a {
     text-decoration: none;
@@ -103,24 +118,30 @@ table#header_t .menu .active a, table#header_t .menu .active a:hover {
 	border-radius: 3px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
     height: 570px;
+    margin: 32px 0 0 5px;
 }
 .b-user-menu__logo {
-	margin-left: 110px;
+    margin-left: 105px;
     border-radius: 100%;
     position: absolute;
-    top: 190px;
-	width: 90px;
+    top: 195px;
+    width: 100px;
 }
 .b-user-menu__avatar {
 	border-radius: 100%;
 	border: solid 5px white;
 }
+.b-user-menu__avatar img {
+    width: 90px;
+    height: 90px;
+}
 
 /*~~~~~~~~~~~~ Strawberry ~~~~~~~~~~~~~~~~~~~*/
 .b-user-menu__strawberry {
 	position: relative;
-    top: -72px;
+    top: -70px;
     right: 73px;
+    margin-top: 0px;
 }
 .b-user-menu__strawberry .switchery>small {
 	display: none;
@@ -286,12 +307,14 @@ div.menu-add-btn {
     width: 240px;
     height: 0px;
     right: -30px;
-    top: -93px;
+    top: -75px;
+    margin: 0px 0 0 5px;
 }
 
 .addlink_button {
     height: 50px;
-	background: #05bf54;											box-shadow: 0 4px 0px 0px #009e03;
+	background: #05bf54;
+	box-shadow: 0 4px 0px 0px #009e03;
 }
 .addlink_button:hover {
 	position: relative;
@@ -318,6 +341,7 @@ div.menu-block, table.menu-block {
 	border-radius: 3px;
     padding: 0 40px;
 	width: 220px;
+    margin-top: 25px;
 }
 td.menu-block-title {
     background-color: #fff;
@@ -482,7 +506,7 @@ div.header-search-box > form:after {
 	border-radius: 3px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
     padding: 12px 0;
-    margin: 16px 8px 0 93px;
+    margin-top: 16px;
 	font: 14px Roboto;
 }
 .b-feed-panel a {
@@ -524,7 +548,6 @@ div.header-search-box > form:after {
 /*~~~~~~~~~~~~~~~ Posts ~~~~~~~~~~~~~*/
 .pg_wrap {
 	background: none!important;
-    padding: 0px 9px 0 30px;
 }
 .pg_wrap table {
 	background: #fff;
@@ -534,6 +557,9 @@ div.header-search-box > form:after {
 	width: 100%!important;
     border-radius: 3px 3px 0 3px;
     padding-left: 0px;
+}
+.b-rating .b-rating__up, .b-rating .b-rating__down {
+    padding-top: 4px;
 }
 .i-sprite_b-rating_up, .i-sprite--b-rating__up {
 	background-image: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_2/143883861418012103.png);
@@ -590,17 +616,13 @@ div.story_head {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
     width: 800px;
     margin-top: 0px;
-    margin-left: 91px;
-    margin-right: 9px;
     padding: 10px 16px 15px;
 	border-radius: 0;
 }
 
 .b-story__footer {
     position: relative;
-	margin-left: 91px;
     margin-top: 0;
-	margin-right: 9px;
     padding-left: 0;
 	background-color: #fff;
     box-shadow: 0px -1px 0px 0px white, 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
@@ -648,10 +670,21 @@ div.story_head {
 	content: url('http://cs6.pikabu.ru/images/previews_comm/2015-08_1/143860783335646558.png')
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .b-story__content_type_media {
-    margin-left: 91px!important;
 	padding-left: 0px!important;
-    margin-right: 9px!important;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28)!important;
     margin-top: 0!important;
 	background: #fff!important;
@@ -690,8 +723,6 @@ div.header-message-signup {
 	background: #fff;
 	box-shadow: 0px 3px 3px 0px rgba(0,0,0,.28);
 	border: none!important;
-    margin-left: 87px;
-    margin-right: 9px;
     width: auto;
 											
 }
@@ -714,7 +745,7 @@ div.header-message-signup {
 .b-comments_type_main {
 	background: #fff;
 	box-shadow: 0px -21px 0px -20px #e5e5e5, 0 -1px 0 0px white, 0px 1px 3px -0px rgba(0, 0, 0, .28);
-    margin: 0px 9px 0 87px;
+    margin: 0;
     padding: 20px;
 }
 
@@ -771,7 +802,7 @@ div.header-message-signup {
 
 @media screen and (max-width: 1285px) {
 	.b-comments_type_main {width: auto;}
-	.b-story__content_type_text {width: auto; max-width: none;}
+	.b-story__content_type_text {width: auto;}
 	.b-story__footer {width: auto;}
 }
 
@@ -875,7 +906,7 @@ div.header-message-signup {
 
 .b-comments__next {
     background-color: #fff;
-    margin: 0px 9px 0 87px;
+    margin: 0;
     border-radius: 0px;
     width: auto;
 	box-shadow: 0px 3px 3px 0px rgba(0,0,0,.28);
@@ -1030,8 +1061,6 @@ div#login_block_register_form > form#form2 {
 }
 .b-comments__reply {
 	box-shadow: 0 -1px 0 0px white, 0px 1px 3px 0px rgba(0, 0, 0, 0.28)!important;
-    margin-right: 9px;
-    margin-left: 87px;
 }
 .b-comments-reply__editable {
     border: 1px solid #ccc;
@@ -1108,4 +1137,13 @@ table.inner_wrap{
 .inner_wrap:nth-child(3) tbody tr td:nth-child(2) table {
 	display: none;
 }
+
+/* ~~~~~~~~~~ Хер зает, зачем это. Надеюсь, что ничего не сломаю ~~~~~~~~~~~*/
+.inner_wrap:nth-child(3) tbody tr td:nth-child(1) {
+	display: none;
+}
+.inner_wrap:nth-child(1) tbody tr td:nth-child(2) div[style="height: 16px"] {
+    height: 25px!important;
+}
+
 }
