@@ -1,14 +1,13 @@
 @-moz-document domain("pikabu.ru") {
-/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,,900&subset=latin,cyrillic);*/
 body {
 	background: url(http://cs6.pikabu.ru/images/previews_comm/2015-08_2/1438916526195283588.png) !important;
 }
+/*~~~~~~~~~~~~~~~ Фон профиля ~~~~~~~~~~~~~~~~~~~~~*/
 .b-user-menu__main, .profile_wrap {
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_1/143849605613319664.jpg)!important;
+	background: url(/*[[back]]*/)!important;
 }
 
-
-/* ~~~~~~~~~~~~~~~ Отступы ~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~ Отступы ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .pg_wrap {
     padding: 0px 20px 0 19px!important;
 }
@@ -16,8 +15,67 @@ body {
     margin-right: 20px!important;
     margin-left: 80px!important;
 }
-/* ~~~~~~~~~~~~~~~ Отступы END ~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~ Для старых страниц ~~~~~~~~~~~~~~~*/
 
+td[style="width: 100%; height: 20px; padding-top: 5px; vertical-align: top;"] {
+	display: none!important;
+}
+div[style*="header_bg13.gif"] {
+	background: #fff!important;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28)!important;
+    height: 90px!important;
+}
+table[style="width: 300px; margin: 15px 0 0 5px; padding: 0px; text-align: center"], table[style="border: 1px solid #d7d7d7; border-radius: 3px; width: 302px; margin: 15px 0 0 5px;text-align: center"] {
+	display: none;
+}
+
+
+div.login_f[style="position: relative;margin: 20px 0 0px 5px; width: 302px;"] {
+    width: 240px!important;
+    height: 0px!important;
+    right: -30px!important;
+    top: -75px!important;
+    margin: 0px 0 0 5px!important;
+}
+a[style="font-family: Tahoma, Arial; color: #5190b8; font-size: 12px;"] {
+    font: 16px Arial!important;
+    color: #28adaa!important;
+    text-decoration: none!important;
+    transition: all 0.3s!important;
+}
+td[style="vertical-align:top; padding: 0 10px 15px 15px;"] {
+	padding: 0 0 15px 0!important;
+}
+td[style="vertical-align:top; padding: 0 10px 15px 15px;"] > div:nth-child(1) {
+	padding: 15px 0!important;
+    text-align: center!important;
+    width: 220px!important;
+    border-bottom: 1px solid #dbdbdb!important;
+}
+.comment_msg.comment_desc {
+    width: 170px!important;
+    font: 14px Arial;
+    padding: 2px 0 10px 50px;
+}
+a[href*="top50_comm"] {
+    display: none;
+}
+p {
+	margin: 0;
+}
+
+#add_story {
+    background: #fff!important;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28)!important;
+    padding: 15px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.main-b {
+    padding-left: 0!important;
+}
+
+/*~~~~~~~~~~~~~~ Для новых страниц ~~~~~~~~~~~~~~~*/
 .rating {
     padding: 10px 0;
 }
@@ -31,11 +89,11 @@ body {
 	text-shadow: 0 0 10px #bbb;
 }
 #logodiv {
-	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_2/143883861418012103.png);		
-    background-position: -42px -44px;
-	width: 194px;
-	height: 55px;
-	top: 17px;
+	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_2/143883861418012103.png)!important;		
+    background-position: -42px -44px!important;
+	width: 194px!important;
+	height: 55px!important;
+	top: 17px!important;
 }
 #logodiv img {
 	display: none;
@@ -60,25 +118,14 @@ body {
 	background: #DDD;
 }
 table.inner_wrap {
-	margin-top: 5px;
+	margin-top: 26px;
 }
+
 .header-cont {
 	background: #fff;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
     height: 90px;
 }
-
-
-
-
-
-
-
-
-
-
-/*~~~~~~~~~~~~~~~~~ Header button ~~~~~~~~~~~~~~~~~~~~~*/
-
 td.header-nav-bottom {
 	vertical-align: inherit
 }
@@ -97,13 +144,13 @@ table#header_t .menu li a {
     padding: 16px 10px 13px!important;
     color: #05bf54;
 }
-
-
 table#header_t .active, table#header_t .active a{
     margin: 0 0 0 20px;
 }
 table#header_t .noactive {
-	margin-left: 20px;
+	margin-left: 20px!important;
+    height: 50px!important;
+    width: 112px!important;
 }
 td.header-nav-bottom > ul.menu > li.menu-item-default {
     width: 112px;
@@ -116,7 +163,6 @@ table#header_t .menu .active a, table#header_t .menu .active a:hover {
     background: #05bf54!important;
 	text-shadow: none;
 }
-
 .b-user-menu {
 	border-radius: 3px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
@@ -138,8 +184,6 @@ table#header_t .menu .active a, table#header_t .menu .active a:hover {
     width: 90px;
     height: 90px;
 }
-
-/*~~~~~~~~~~~~ Strawberry ~~~~~~~~~~~~~~~~~~~*/
 .b-user-menu__strawberry {
 	position: relative;
     top: -70px;
@@ -165,9 +209,6 @@ table#header_t .menu .active a, table#header_t .menu .active a:hover {
 .b-user-menu__strawberry .switchery[style*="rgb(204, 206, 209)"] {
     background-position: 203px -62px;
 }
-
-/*~~~~~~~~~~~~ Strawberry End~~~~~~~~~~~~~~~~*/
-
 .b-user-menu__logo:before, .b-user-menu__logo:after {
 	display: none;
 }
@@ -190,8 +231,8 @@ table#header_t .menu .active a, table#header_t .menu .active a:hover {
     top: 45px;
     left: 3px;
 	z-index: 9;
-	font: 13pt/20pt Roboto;
-	font-weight: 900;
+	font: 13pt/20pt Arial;
+	font-weight: normal;
 }
 .b-user-menu__logout {
 	width: 40px;
@@ -227,10 +268,11 @@ table#header_t .menu .active a, table#header_t .menu .active a:hover {
 	color: #fff;
 	width: 75px;
 	padding: 0 40px;
-	font: 13pt/20pt Roboto;
-	font-weight: 900;
+	font: 13pt/20pt Arial;
+	font-weight: normal;
 	text-align: center;
 	border-right: 1px solid #fff;
+    text-shadow: 0 0 5px #000;
 }
 .i-sprite_users_menu-subscribers, .i-sprite--users__menu-subscribers {
 	display: none;
@@ -242,9 +284,10 @@ table#header_t .menu .active a, table#header_t .menu .active a:hover {
 	color: #fff;
 	width: 110px;
 	padding: 0 16px;
-	font: 13pt/20pt Roboto;
-	font-weight: 900;
+	font: 13pt/20pt Arial;
+	font-weight: normal;
 	text-align: center;
+    text-shadow: 0 0 5px #000;
 }
 .b-user-menu-list li:nth-child(3) {
 	border-top: 2px solid #d1d8da;
@@ -259,7 +302,7 @@ table#header_t .menu .active a, table#header_t .menu .active a:hover {
 	top: -130px;
 	position: relative;
     padding: 8px 0 8px 30px;
-	font: 13pt/20pt Roboto;
+    font-size: 16px;
 	margin: 0 40px;
 }
 .i-sprite_users_menu-settings, .i-sprite--users__menu-settings {
@@ -345,17 +388,27 @@ div.menu-block, table.menu-block {
 	width: 220px;
     margin-top: 25px;
 }
+div.login_f:nth-child(n+5) {
+	background-color: #fff !important;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28)!important;
+	border: none!important;
+	border-radius: 3px!important;
+    padding: 0 40px!important;
+	width: 220px!important;
+    margin-top: 25px!important;
+}
 td.menu-block-title {
     background-color: #fff;
 }
 .rating_bl {
-	font: 16px Tahoma, Arial, sans-serif;
-    color: #4a4a4a;
-    text-shadow: none;
-    padding: 55px 0px 20px 0px;
-    border-bottom: 1px solid;
-    border-bottom-color: #dbdbdb;
-	width: 100%;
+	font: 16px Tahoma, Arial, sans-serif!important;
+    color: #4a4a4a!important;
+    text-shadow: none!important;
+    padding: 55px 0px 20px 0px!important;
+    border-bottom: 1px solid!important;
+    border-bottom-color: #dbdbdb!important;
+	width: 100%!important;
+    background: none!important;
 }
 td.menu-best-comm > div.menu-story-link {
 	padding: 15px 0;
@@ -365,7 +418,7 @@ td.menu-best-comm > div.menu-story-link {
 }
 
 td.menu-best-comm > div.menu-story-link > a {
-	font: 16px Roboto;
+	font: 16px Arial;
     color: #28adaa;
     text-decoration: none;
 	transition: all 0.3s;
@@ -374,31 +427,30 @@ td.menu-best-comm > div.menu-story-link > a:hover {
 	text-shadow: 0 0 10px #999;
 }
 .info_c {
-	font: 0px Roboto!important;
+	font: 0px Arial!important;
 	margin-left: 40px;
 	margin-top: 5px;
     width: 100%;
 }
 .info {
     line-height: 30px!important;
-    font: 14px Roboto;
+    font: 14px Arial;
 }
 td.menu-best-comm > div.menu-comm-desc {
 	width: 170px!important;
-	font: 14px Roboto;
+	font: 14px Arial;
 	padding: 2px 0 10px 50px;
 }
-td.menu-best-comm > div.menu-comm-head > h6 {
-	font: 16px Roboto;
-	font-weight: 900;
-	margin-top: 30px;
-	margin-left: -50px;
-	
-	position: absolute;
+div.info_c h6 {
+	font: 16px Arial!important;
+	font-weight: bold!important;
+	margin-top: 33px!important;
+	margin-left: -50px!important;
+	position: absolute!important;
 }
 .info_c a {
     color: #28adaa;
-	font: 12px Roboto;
+	font: 12px Arial;
     padding: 0 0 0 10px;
 }
 .comment_msg a {
@@ -448,7 +500,7 @@ div.menu-top-tags:before {
 .small_text a {
 	color: #28adaa;
     text-decoration: none;
-    font: normal 16px Roboto;
+    font: normal 16px Arial;
 	transition: all .3s;
 }
 .small_text a:hover {
@@ -464,14 +516,14 @@ td.menu-block-small-txt > img {
     width: 220px!important;
 	padding-left: 0px!important;
 }
-div.menu-cont div.header-nav-top {
+div.header_links {
     height: 25px!important;
     margin-top: -88px!important;
     opacity: 0;
 	transition: .5s;
 }
 
-div.menu-cont div.header-nav-top:hover {
+div.header_links:hover {
 	opacity: 1;
 }
 .search_block {
@@ -489,7 +541,9 @@ div.menu-cont div.header-nav-top:hover {
 	opacity: 0;
 	z-index: 100;
 }
-div.header-search-box > form:after {
+
+/* ~~~~ да-да-да, serach ~~~~~~*/
+div#serach_block > form:after {
 	content: " ";
 	background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_2/143883861418012103.png);
     background-position: 113px -47px;
@@ -498,18 +552,13 @@ div.header-search-box > form:after {
     top: -23px;
     padding: 10px 10px 0px;
 }
-
-
-
-
-/*~~~~~~~~~~~~~~~ Feed panel ~~~~~~~~~~~~~~*/
 .b-feed-panel {
 	background: #fff;
 	border-radius: 3px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
     padding: 12px 0;
     margin-top: 16px;
-	font: 14px Roboto;
+	font: 14px Arial;
 }
 .b-feed-panel a {
     border: none;
@@ -540,14 +589,6 @@ div.header-search-box > form:after {
 	padding: 13px 21px 7px 0;
     margin-left: 10px;
 }
-
-
-
-
-
-
-
-/*~~~~~~~~~~~~~~~ Posts ~~~~~~~~~~~~~*/
 .pg_wrap {
 	background: none!important;
 }
@@ -612,7 +653,8 @@ div.story_head {
 }
 
 .b-story__content_type_text {
-    font: 16px Roboto;
+    font: 14px Arial;
+    line-height: 1.5;
 	border: none;
 	background-color: #fff;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
@@ -625,6 +667,7 @@ div.story_head {
 .b-story__footer {
     position: relative;
     margin-top: 0;
+	margin-bottom: 0;
     padding-left: 0;
 	background-color: #fff;
     box-shadow: 0px -1px 0px 0px white, 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
@@ -671,20 +714,6 @@ div.story_head {
 .showtext[attr="0"]{
 	content: url('http://cs6.pikabu.ru/images/previews_comm/2015-08_1/143860783335646558.png')
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .b-story__content_type_media {
 	padding-left: 0px!important;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28)!important;
@@ -700,27 +729,13 @@ div.story_head {
     margin: auto;
     text-align: center;
 }
-/*~~~~~~~~~~~~ Notification ~~~~~~~~~~~~~*/
-/*.b-user-menu-list__count {
-	background-color: #f6265c!important;
-    border-radius: 30px!important;
-	color: #fff!important;
-    font-weight: 400;
-    padding: 5px 10px;
-}*/
 div.header-message-signup {
 	background: #05bf54;
 	border: 0;
 	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, .15);
     border-bottom-left-radius: 3px;
-    font: 15px Roboto;
+    font: 15px Arial;
 }
-
-/*~~~~~~~~~~~~ Notification End ~~~~~~~~~~~~~*/
-
-
-
-/*~~~~~~~~~~~~ Comments ~~~~~~~~~~~~~~~~~~~~~*/
 .b-social, .b-story__hr, .b-story-info {
 	background: #fff;
 	box-shadow: 0px 3px 3px 0px rgba(0,0,0,.28);
@@ -753,7 +768,7 @@ div.header-message-signup {
 
 
 .b-comment {
-	font: 14px Roboto;
+	font: 14px Arial;
 }
 .b-comments {
     border-left: 1px solid #d8d8d8;
@@ -881,11 +896,11 @@ div.header-message-signup {
     margin-right: 6px;
 }
 .b-story-info__main {
-	font: 14px Roboto;
+	font: 14px Arial;
 }
 .b-comment__header, .b-comment__rating-count {
     font-weight: 900;
-	font: 14px Roboto;
+	font: 14px Arial;
 	margin: 2px 5px 0 0 ;
 }
 .b-comment__user a {
@@ -898,7 +913,7 @@ div.header-message-signup {
 }
 .b-comment__control {
 	color: #28adaa;
-	font: 14px Roboto;
+	font: 14px Arial;
 	transition: all .3s;
 }
 .b-comment__control:hover {
@@ -929,17 +944,6 @@ div.header-message-signup {
 .b-comments_new-line:before, .b-comments_new-line:after {
     border: solid 1px #c9c9c9;
 }
-
-
-
-
-
-
-
-
-
-
-/*~~~~~~~~~~~~~~~~~~~ Social ~~~~~~~~~~~~~~*/
 .i-sprite_social_vk, .i-sprite--social__vk, .i-sprite_social_vk_hover_yes {
     background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_2/143883861418012103.png);
     background-position: 309px -111px;
@@ -970,20 +974,14 @@ div.header-message-signup {
 .i-sprite_social_saved, .i-sprite--social__saved {
     border-radius: 4px;
 }
-/*~~~~ Кнопка лицокниги почему-то не пашет :( ~~*/
-
-/*~~~~~~~~~~~~~~~~~~~ Social End ~~~~~~~~~~~~~~*/
-
-/* ~~~~~~~~~~~~~~~~~~~ Auth ~~~~~~~~~~~~~~~*/
 
 table.menu-auth-form {
-    font: 14px Roboto;
+    font: 14px Arial;
     height: 240px;
     background: #fff;
     border-radius: 0 0 3px 3px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
 }
-
 div.menu-auth-form {
     width: 300px;
     margin-top: -100px;
@@ -1029,7 +1027,7 @@ div.menu-auth-block2 .menu-auth-rem {
     padding: 20px 0 5px 0;
 }
 table.menu-auth-tabs {
-    font: 14px Roboto;
+    font: 14px Arial;
 	background: #fff;
 	border-radius: 3px 3px 0 0;
 }
@@ -1054,9 +1052,6 @@ div#login_block_register_form > form#form2 {
     margin: 90px 0 60px;
 }
 
-/*~~~~~~~~~~~~~~~~ Auth end ~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~ Я не знаю как это назвать ~~~~~~~~*/
 .b-story__rating-pluses {
     background-color: #7ed321;
 	border-radius: 4px 0 0 4px;
@@ -1067,7 +1062,6 @@ div#login_block_register_form > form#form2 {
 	border-radius: 4px;
 }
 
-/* ~~~~~~~~~~~~~~~ Окно нового комментария ~~~~~~~~~ */
 .b-comments-reply {
 	background: #fff;
     max-width: 800px;
@@ -1092,7 +1086,7 @@ div#login_block_register_form > form#form2 {
 	margin-bottom: 4px;
     height: 35px;
     width: 160px;
-	font: 14px Roboto;
+	font: 14px Arial;
 	transition: none;
 }
 .b-button_type_default:hover {
@@ -1102,7 +1096,7 @@ div#login_block_register_form > form#form2 {
 }
 .b-comments-reply__attach-files {
 	color: #28adaa;
-	font: 14px Roboto;
+	font: 14px Arial;
     margin: 7px 20px;
 	transition: all .3s;
 }
@@ -1113,9 +1107,6 @@ div#login_block_register_form > form#form2 {
 .b-comments-reply__controls {
     padding-top: 20px;
 }
-/* ~~~~~~~~~~~~~~~ Окно нового комментария Конец ~~~~~~~~~ */
-
-/* ~~~~~~~~~~~~~~~~ Profile ~~~~~~~~~~~~~*/
 
 .profile_wrap {
     background-size: 862px auto!important;
@@ -1233,9 +1224,6 @@ a[href*="notes.php"]{
     color: #28adaa!important;
 	text-decoration: none!important;
 }
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~ Сортировка Постов в профиле ~~~~~~~~~~~~~~~~~*/
 #blk-upcoming a {
 	color: #28adaa;
 	text-decoration: none;
@@ -1258,22 +1246,17 @@ a[href*="notes.php"]{
 	background: #05bf54!important;
 }
 
-/*~~~~~~~~~ Сортировка Постов в профиле Конец ~~~~~~~~~~~*/
-
-
-/* ~~~~~~~~~~~ Настройки ~~~~~~~~~~~~~~*/
 .b-profile {
 	background: #fff;
 	border-radius: 3px!important;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28)!important;
 	padding: 20px;
 }
-/* ~~~~~~~~~~~~~~~ Правый блок / Ваши подписки ~~~~~~~~~~*/
 td.menu-subs-item > div.menu-subs-tabs > span {
 	width: 95px!important;
 	height: auto!important;
 	padding: 10px 0;
-	font: normal 15px Roboto;
+	font: normal 15px Arial;
 }
 .subs_list_switch_active {
     background: #05bf54!important;
@@ -1290,13 +1273,8 @@ td.menu-subs-item > div.menu-subs-tabs > span {
 .subs_list_item a {
 	color: #28adaa!important;
     text-decoration: none!important;
-	font: normal 15px Roboto;
+	font: normal 15px Arial;
 }
-/* ~~~~~~~~~~~ Правый блок / Ваши подписки Конец ~~~~~~~~~~*/
-
-
-/*~~~ Нижний информационный блок ~~~~~~~~~~~~~~~~*/
-/*~~~ Нижний информационный блок Конец ~~~~~~~~~~*/
 .pager a {
 	color: #28adaa;
     text-decoration: none;
@@ -1334,19 +1312,6 @@ td.menu-subs-item > div.menu-subs-tabs > span {
     transition: all 0.2s;
     color: #05bf54;
 }
-/* 
-:nth-child(2)
-[href*="profile"]
-*/
-
-/*
-
-Пофиксить: 
-http://pikabu.ru/notes.php
-
-
-*/
-
 .inner_wrap > tbody > tr > td[style="padding-left: 50px; padding-right: 0px; text-align: left;"] {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28)!important;
     background-color: #fff;
@@ -1367,7 +1332,6 @@ http://pikabu.ru/notes.php
 
 @-moz-document url-prefix("http://pikabu.ru/story/") {
 .b-story__footer {
-	margin-bottom: 0;
     top: 0;
     box-shadow: 0px -1px 0px 0px #fff, 0px 3px 0px 0px #fff, 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
 	border-radius: 0;
@@ -1376,17 +1340,14 @@ table.inner_wrap{
     margin-top: 0px;
 }
 
-/* ~~~~~~~~~~ Реклама портит вид, Админ, извини ._. ~~~~~~~~~~*/
 .inner_wrap:nth-child(3) tbody tr td:nth-child(2) table {
 	display: none;
 }
 
-/* ~~~~~~~~~~ Хер зает, зачем это. Надеюсь, что ничего не сломаю ~~~~~~~~~~~*/
 .inner_wrap:nth-child(3) tbody tr td:nth-child(1) {
 	display: none;
 }
 .inner_wrap:nth-child(1) tbody tr td:nth-child(2) div[style="height: 16px"] {
     height: 25px!important;
 }
-
 }
