@@ -1,20 +1,21 @@
-body {
-      background: url(http://cs6.pikabu.ru/images/previews_comm/2015-08_2/1438916526195283588.png) !important;
+@-moz-document domain("pikabu.ru") {
+  body {
+      background-image: url(/*[[back]]*/) !important;
+      /*[[back-atch]]*/
   }
   .inner_wrap:nth-child(3) tbody tr td:nth-child(2) {width: 100%!important} 
   .b-story__content_type_text {
       font: 15px Arial;
       line-height: 1.6;
       border: none;
-      background-color: #fff;
-padding: 0px 25px 25px;
+      /*[[coltext]]*/
       width: 800px;
       margin-top: 0px;
       border-radius: 0;
       position: relative;
   }
   .b-user-menu__main, .profile_wrap {
-      background: url(http://cs6.pikabu.ru/images/big_size_comm/2015-08_2/1439180736188597704.png)!important;
+      background: url(/*[[backprof]]*/)!important;
   }
 .b-gifx {margin:auto}
 .detailDate {padding-right: 200px}
@@ -105,8 +106,7 @@ padding: 0px 25px 25px;
       color: #37c5c2;
   }
   #logodiv {
-      background-image: url(http://cs5.pikabu.ru/images/big_size_comm/2015-08_3/1439359567121421757.png)!important;		
-background-size: 256px!important;
+      /*[[logo]]*/
       width: 195px!important;
       height: 55px!important;
       top: 17px!important;
@@ -1633,3 +1633,55 @@ label[for=is16] {
     padding: 2px;
 }
 #is_16_span {margin-top: 5px;display: block;}
+}
+
+@-moz-document url-prefix("http://pikabu.ru/story/") {
+.b-story__footer {
+    top: 0;
+    box-shadow: 0px -1px 0px 0px #fff, 0px 3px 0px 0px #fff, 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
+	border-radius: 0;
+}
+table.inner_wrap{
+    margin-top: 0px;
+}
+
+.inner_wrap:nth-child(3) tbody tr td:nth-child(2) table {
+	display: none;
+}
+
+.inner_wrap:nth-child(3) tbody tr td:nth-child(1) {
+	display: none;
+}
+.inner_wrap:nth-child(1) tbody tr td:nth-child(2) div[style="height: 16px"] {
+    height: 25px!important;
+}
+}
+
+@-moz-document url-prefix("http://pikabu.ru/freshitems.php"), url-prefix("http://pikabu.ru/commented.php") {
+  #blk-upcoming {
+      margin: 10px 0!important;
+      box-shadow: none!important;
+  }
+  #commented_search {
+      height: 34px;
+      background: none;
+      border: 1px solid #dadada;
+      border-radius: 3px!important;
+  }
+  .b-comment-toggle__icon {
+      padding: 4px 2px 0!important;
+  }
+  .b-comments-profile_type_outcoming {
+      margin: 0 20px 0 0px;
+  }
+  div.profile_commented, table[style="width: 100%; padding-left:30px"], div[style="padding: 0 0 10px 30px; width: 90%; text-align: left; border-radius: 5px;"] {
+      padding-left: 0px!important;
+  }
+}
+
+@-moz-document url-prefix("http://pikabu.ru/editprofile.php") {
+  #blk-upcoming {
+      margin-right: -35px!important;
+      margin-left: 0px!important;
+  }
+}
