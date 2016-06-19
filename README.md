@@ -4,6 +4,9 @@
 ![alt tag](https://github.com/Staremang/New-Pikabu-Design/blob/master/Screenshots/Screenshot-1.png?raw=true)
 
 ## Версии
+v.1.6.1 (19 июня 2016)
+ - Исправлена ошибка с переносом слов, длиннее ширины страницы
+
 v.1.6 (6 июня 2016)
  - Исправлен кнопки подписки в профиле
  - Исправлен блок заметок в профиле

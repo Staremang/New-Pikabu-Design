@@ -1,6 +1,7 @@
 @-moz-document domain("pikabu.ru") {
 body { background-image: url(/*[[back]]*/)!important;/*[[back-atch]]*/}
 #logodiv {/*[[logo]]*/width: 195px!important; height: 55px!important; top: 17px!important; margin-left: 20px!important }
+.b-story-block__content {word-break: break-word}
 .b-story__content_type_text, .b-story-blocks_with-border {/*[[coltext]]*/}
 .b-user-menu__main, .profile_wrap { background: url(/*[[backprof]]*/)!important }
 .b-community-h-menu {margin: 0 -7px 20px 0}
