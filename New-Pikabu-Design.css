@@ -32,10 +32,41 @@ div.profile_commented, table[style="width: 100%; padding-left:30px"], div[style=
 #blk-upcoming { margin-right: -35px!important; margin-left: 0!important }
 }
 
+/* Удаляем:
+
 @-moz-document url("http://pikabu.ru/profile/SKYPIDAR"), url("http://pikabu.ru/profile/Skypidar") {
 .profile_wrap { background: url(http://cs5.pikabu.ru/images/big_size_comm/2015-08_6/1440737381167043167.jpg)!important }
 }
 
 @-moz-document url("http://pikabu.ru/profile/admin") {
 .profile_wrap { background: url(http://cs5.pikabu.ru/images/big_size_comm/2015-08_6/1440738042120697277.jpg)!important }
+}
+
+*/
+
+/* NEW */
+
+/*
+	Удалить:
+	.b-user-menu__header a:hover:before
+	.b-user-menu__header a:hover:after
+
+ */
+.b-logo {
+    background-image: url(http://cs5.pikabu.ru/images/previews_comm/2015-08_3/1439470375184296867.png);
+    background-position: 0;
+    background-size: 100%;
+    margin-top: 23px;
+    margin-left: 80px;
+    height: 44px;
+}
+.b-logo:after {
+    content: initial;
+}
+.page-story {
+    margin-top: -20px;
+	margin-bottom: 20px;
+}
+.story {
+    overflow: initial;
 }
