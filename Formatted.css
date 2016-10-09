@@ -22,7 +22,7 @@
 	}
 
 	.b-user-menu__main,
-	.profile_wrap {
+	.b-user-profile{
 		background: url(/*[[backprof]]*/)!important
 	}
 
@@ -192,7 +192,7 @@
 	.pg_wrap table,
 	table.menu-auth-form,
 	table.menu-auth-tabs .menu-auth-tab-signin,
-	.profile_wrap,
+	.b-user-profile,
 	.b-profile,
 	.inner_wrap>tbody>tr>td[style="padding-left: 50px; padding-right: 0px; text-align: left;"],
 	.inner_wrap>tbody>tr>td[style="padding-left: 30px; padding-right: 0px; text-align: left;"],
@@ -206,7 +206,7 @@
 	}
 
 	.b-comments__reply,
-	input#note_text {
+	.b-user-profile-notes {
 		box-shadow: 0 -2px 0 0 #fff, 0 1px 2px 0 rgba(0, 0, 0, .29)
 	}
 
@@ -430,7 +430,8 @@
 		border-radius: 3px!important;
 		padding: 14px 12px!important;
 		color: #05bf54;
-		font-size: 15px
+		font-size: 15px;
+		height: 20px;
 	}
 
 	table#header_t .active,
@@ -440,8 +441,6 @@
 
 	table#header_t .noactive {
 		margin-left: 20px!important;
-		height: 50px!important;
-		width: 112px!important
 	}
 
 	td.header-nav-bottom>ul.menu>li.menu-item-default {
@@ -461,7 +460,7 @@
 
 	.b-user-menu {
 		height: 610px;
-		margin: 32px 0 0 5px
+		margin: 25px 0 0 5px
 	}
 
 	.b-user-menu__logo {
@@ -549,15 +548,13 @@
 		height: 40px;
 		float: none;
 		left: 222px;
-		top: -50px;
-		background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjEgMjUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgc3Ryb2tlLXdpZHRoPSIxIiBTdHJva2UtbGluZWNhcD0icm91bmQiIFN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZT0iIzlCOUI5QiIgZmlsbD0ibm9uZSI+PHBvbHlsaW5lIHBvaW50cz0iMTYsOSAxOSwxMiIvPjxwb2x5bGluZSBwb2ludHM9IjE2LDE1IDE5LDEyIi8+PHBvbHlsaW5lIHBvaW50cz0iOCwxMiAxOSwxMiIvPjxwb2x5bGluZSBwb2ludHM9IjE0LDE4IDE0LDIzIDEsMjMgMSwxIDE0LDEgMTQsNiIvPjwvZz48L3N2Zz4=) no-repeat;
-		background-position: 12px;
+		top: -53px;
+		background: #fff  url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjEgMjUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgc3Ryb2tlLXdpZHRoPSIxIiBTdHJva2UtbGluZWNhcD0icm91bmQiIFN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZT0iIzlCOUI5QiIgZmlsbD0ibm9uZSI+PHBvbHlsaW5lIHBvaW50cz0iMTYsOSAxOSwxMiIvPjxwb2x5bGluZSBwb2ludHM9IjE2LDE1IDE5LDEyIi8+PHBvbHlsaW5lIHBvaW50cz0iOCwxMiAxOSwxMiIvPjxwb2x5bGluZSBwb2ludHM9IjE0LDE4IDE0LDIzIDEsMjMgMSwxIDE0LDEgMTQsNiIvPjwvZz48L3N2Zz4=) 12px no-repeat;
 		background-size: 20px;
-		background-color: #fff;
 		border-radius: 100%;
 		opacity: 1
 	}
-
+	/*
 	.b-user-menu__logout:before {
 		content: 'Выход';
 		top: 44px;
@@ -565,7 +562,7 @@
 		position: absolute;
 		color: #9b9b9b
 	}
-
+	*/
 	.b-user-menu-list {
 		background: #fff;
 		margin: 0
@@ -772,7 +769,7 @@
 		border: none!important;
 		padding: 0 40px!important;
 		width: 220px!important;
-		margin-top: 25px!important
+		margin-top: 20px!important
 	}
 
 	.menu-block:nth-child(7) table:before,
@@ -968,6 +965,10 @@
 		border: none;
 		color: #28adaa
 	}
+	.b-feed-panel a[data-type="community_rating"],
+	.b-feed-panel a[data-type="subs"] {
+	    padding-left: 12px;
+	}
 
 	.b-feed-panel__toolbar>div>span {
 		display: none
@@ -1029,7 +1030,7 @@
 		border-radius: 3px 3px 0;
 		padding-left: 0
 	}
-
+	/*
 	.b-rating .b-rating__up,
 	.b-rating .b-rating__down {
 		padding-top: 4px
@@ -1065,7 +1066,7 @@
 		width: 32px;
 		height: 26px
 	}
-
+	*/
 	div.story_head span {
 		display: none
 	}
@@ -1625,7 +1626,7 @@
 		padding-top: 20px
 	}
 
-	.profile_wrap {
+	.b-user-profile {
 		background-size: 862px auto!important;
 		background-position: center 210px!important;
 		width: auto!important;
@@ -1636,12 +1637,12 @@
 		padding: 110px 0 0!important
 	}
 
-	.profile_wrap>table {
+	.b-user-profile>table {
 		background: #fff;
 		padding: 10px
 	}
 
-	.profile_wrap>table div>img[src*=avatars] {
+	.b-user-profile>table div>img[src*=avatars] {
 		width: 90px!important;
 		box-shadow: none!important;
 		border-radius: 100%!important;
@@ -1650,28 +1651,28 @@
 		background-color: #fff
 	}
 
-	.profile_wrap>table div>img[src*=loading-spin] {
+	.b-user-profile>table div>img[src*=loading-spin] {
 		margin-left: -127px!important;
 		margin-top: 62px!important
 	}
 
-	.profile_wrap>table div {
+	.b-user-profile>table div {
 		position: relative;
 		font-size: 14px;
 		line-height: 25px!important
 	}
 
-	.profile_wrap>table div>a[href*=profile] {
+	.b-user-profile>table div>a[href*=profile] {
 		color: #000!important
 	}
 
-	.profile_wrap>table>tbody>tr>td:nth-child(n+2) {
+	.b-user-profile>table>tbody>tr>td:nth-child(n+2) {
 		display: inline-block!important;
 		width: 100%!important;
 		margin-bottom: 25px
 	}
 
-	.profile_wrap>table>tbody>tr>td:nth-child(2) {
+	.b-user-profile>table>tbody>tr>td:nth-child(2) {
 		-webkit-columns: 235px;
 		-moz-columns: 235px;
 		columns: 235px;
@@ -1721,7 +1722,7 @@
 		top: -5px
 	}
 
-	input#note_text {
+	.b-user-profile-notes {
 		margin-left: 18px!important;
 		width: -webkit-calc(100% - 68px)!important;
 		width: calc(100% - 68px)!important;
@@ -1739,11 +1740,21 @@
 	#blk-upcoming {
 		height: 40px;
 		background: #fff;
-		margin-bottom: 0!important;
+	/*	margin-bottom: 0!important; */
 		font-size: 15px;
 		border: none
 	}
-
+	#blk-upcoming.full-width {
+	    margin-right: 20px!important;
+	}
+	#feed-panel-hidden-counter {
+	    float: right;	
+	}
+	.b-feed-panel__toolbar>div {
+		
+	    display: inline-block;
+	/*    margin-left: 10px; */
+	}
 	#blk-upcoming span {
 		border: none!important;
 		margin: 0!important;
@@ -1773,29 +1784,53 @@
 		background: #fff;
 		padding: 20px
 	}
-
-	td.menu-subs-item>div.menu-subs-tabs>span {
-		width: 95px!important;
-		height: auto!important;
-		padding: 10px 0;
-		font: normal 15px Arial
+	.menu-subs-tabs>span {
+	    width: 100%;
+	    padding: 0;
+	    font: normal 15px Arial;
+	    text-align: center;
+	    margin: 0!important;
+	    border-bottom: 1px solid #dbdbdb;
 	}
-
+	.menu-subs-tabs {
+	    display: flex;
+		margin: 0!important;
+	}
+	.menu-subs-tabs>span>a {
+		display: block;
+	    line-height: 35px;
+	}
 	.subs_list_switch_active {
-		background: #05bf54!important;
-		box-shadow: none;
-		border: 0
+	    background: none;
+	    box-shadow: none;
+	    border: 0;
+	    border-bottom: 2px solid #05bf54!important;
+	    border-radius: 0;
 	}
-
+	/*
 	.subs_list_switch_active>a {
 		color: #fff!important;
 		padding: 10px
 	}
-
+	*/
 	.subs_list_item {
-		margin: 15px 0
+		margin: 10px 0
 	}
-
+	.subs_list_item:before {
+	    content: ' ';
+	    margin: 3px 5px 3px 5px;
+	    background: #b7b7b7;
+	    width: 3px;
+	    height: 3px;
+	    display: inline-block;
+	    border-radius: 50%;
+	}
+	.subs_list_switch_wrap {
+		margin: 20px 0;
+	}
+	td.menu-subs-item {
+		padding: 0; 
+	}
 	.subs_list_item a {
 		color: #28adaa!important;
 		text-decoration: none!important;
@@ -2021,40 +2056,6 @@
 	#is_16_span {
 		margin-top: 5px;
 		display: block
-	}
-
-	.b-user-menu__header a:hover:after {
-		content: "Просмотреть мои публикации";
-		position: absolute;
-		border-radius: 2px;
-		background: #333;
-		box-shadow: 0 0 14px rgba(0, 0, 0, .3);
-		color: #fff;
-		font-family: Tahoma, Helvetica, Arial, sans-serif;
-		font-size: 12px;
-		line-height: 16px;
-		padding: 8px 10px;
-		left: 50%;
-		margin-left: -100px;
-		width: 180px;
-		top: 25px;
-		z-index: 9999999;
-		pointer-events: none;
-		overflow: visible
-	}
-
-	.b-user-menu__header a:hover:before {
-		content: "";
-		position: absolute;
-		right: 50%;
-		margin-right: -8px;
-		top: 18px;
-		z-index: 9999999;
-		pointer-events: none;
-		overflow: visible;
-		border-bottom: 8px solid #333;
-		border-left: 8px solid transparent;
-		border-right: 8px solid transparent
 	}
 
 	.story__rating-block {
@@ -2365,8 +2366,7 @@
 		float: none;
 		padding: 25px 50px;
 		max-width: 100%;
-		margin-left: auto;
-		margin-right: auto
+		margin-left: 94px
 	}
 
 	.b-gtpost-builder__sidebar {
@@ -2407,6 +2407,41 @@
 		display: none
 	}
 
+
+	.b-logo {
+	    background: url(http://cs5.pikabu.ru/images/previews_comm/2015-08_3/1439470375184296867.png);
+	    background-size: 100%;
+	    margin: 23px 0 0 83px;
+	    height: 44px;
+	}
+	.b-logo:after {
+	    content: initial;
+	}
+	.page-story {
+	    margin-top: -20px;
+		margin-bottom: 20px;
+	}
+	.story {
+	    overflow: initial;
+	}
+
+	div.header-search-box {
+		padding: 0 0 25px 4px;
+	    height: 38px;
+	}
+	.fa-bell-o {
+	    margin-top: -3px;
+	}
+	.story__scroll-wrapper_enabled {
+	    overflow: visible;
+	}
+	.b-community-line {
+		max-width: 195px;
+	}
+	.most_comm_post_show {
+		width: 100%!important;
+	    padding: 10px 0 0 0!important;
+	}
 }
 
 @-moz-document url-prefix("http://pikabu.ru/story/") {
@@ -2422,6 +2457,9 @@
 
 	.inner_wrap:nth-child(1) tbody tr td:nth-child(2) div[style="height: 16px"] {
 		height: 25px!important
+	}
+	.page-story {
+		margin-top: 5px;
 	}
 }
 
@@ -2476,16 +2514,33 @@
 
 /*
 	Удалить:
-	.b-user-menu__header a:hover:before
-	.b-user-menu__header a:hover:after
+	#logodiv // Удалено
+	.b-user-menu__header a:hover:before // Удалено
+	.b-user-menu__header a:hover:after // Удалено
+	.b-user-menu__logout:before 
 
+	Кнопки рейтинга поста:
+		.b-rating .b-rating__up
+		.b-rating .b-rating__down
+		.i-sprite_b-rating_up
+		.i-sprite--b-rating__up
+		.i-sprite_b-rating_down
+		.i-sprite--b-rating__down
+		.i-sprite_b-rating_up,
+		.i-sprite--b-rating__up
+		.i-sprite_b-rating_up-active
+		.i-sprite--b-rating__up-active
+		.i-sprite_b-rating_down-active
+		.i-sprite--b-rating__down-active
+
+
+	.profile_wrap заменили на .b-user-profile
+	input#note_text на .b-user-profile-notes
  */
 .b-logo {
-    background-image: url(http://cs5.pikabu.ru/images/previews_comm/2015-08_3/1439470375184296867.png);
-    background-position: 0;
+    background: url(http://cs5.pikabu.ru/images/previews_comm/2015-08_3/1439470375184296867.png);
     background-size: 100%;
-    margin-top: 23px;
-    margin-left: 80px;
+    margin: 23px 0 0 83px;
     height: 44px;
 }
 .b-logo:after {
@@ -2497,4 +2552,13 @@
 }
 .story {
     overflow: initial;
+}
+
+div.header-search-box {
+	padding: 0 0 25px 0;
+    height: 38px;
+}
+
+.fa-bell-o {
+    margin-top: -3px;
 }
