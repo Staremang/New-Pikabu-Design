@@ -2442,6 +2442,53 @@
 		width: 100%!important;
 	    padding: 10px 0 0 0!important;
 	}
+	.community-info,
+	.community-desc,
+	.b-community-statuses,
+	.community-owner {
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+	.community-rules {
+	    margin-left: -40px;
+	    margin-right: -40px;
+	    padding: 10px 40px!important;
+	}
+	.b-community-info .community-info,
+	.b-community-info .community-buttons {
+		text-align: center;
+	}
+	.community-info > a {
+		display: block!important;
+		margin: 0!important;
+		float: none!important;
+	}
+	.community-info > a > h2,
+	.community-owner > a {
+		color: #28adaa!important;
+	}
+	.community-info > br {
+		display: none;
+	}
+	.b-community-info .community-info img {
+		width: 64px!important;
+		height: 64px!important;
+	}
+	.community-info img,
+	.community-owner img {
+		border-radius: 50%!important;
+	}
+	.b-community-info .community-subs {
+		display: block!important;
+	}
+	.b-community-info .community-buttons {
+		border-bottom: 1px solid #dbdbdb;
+		padding: 10px 0!important;
+	}
+	.community-buttons > a {
+	    color: #b5b5b5!important;
+	    font-size: 12px;
+	}
 }
 
 @-moz-document url-prefix("http://pikabu.ru/story/") {
@@ -2537,28 +2584,3 @@
 	.profile_wrap заменили на .b-user-profile
 	input#note_text на .b-user-profile-notes
  */
-.b-logo {
-    background: url(http://cs5.pikabu.ru/images/previews_comm/2015-08_3/1439470375184296867.png);
-    background-size: 100%;
-    margin: 23px 0 0 83px;
-    height: 44px;
-}
-.b-logo:after {
-    content: initial;
-}
-.page-story {
-    margin-top: -20px;
-	margin-bottom: 20px;
-}
-.story {
-    overflow: initial;
-}
-
-div.header-search-box {
-	padding: 0 0 25px 0;
-    height: 38px;
-}
-
-.fa-bell-o {
-    margin-top: -3px;
-}

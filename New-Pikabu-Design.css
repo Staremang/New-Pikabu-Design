@@ -1,6 +1,5 @@
 @-moz-document domain("pikabu.ru") {
 body {background-image: url(/*[[back]]*/)!important;/*[[back-atch]]*/}
-#logodiv {background-image: url(http://cs5.pikabu.ru/images/previews_comm/2015-08_3/1439470375184296867.png)!important; -webkit-background-size: 100%!important;background-size: 100%!important;width: 195px!important;height: 55px!important;top: 17px!important;margin-left: 20px!important}
 .b-story-block__content {word-break: break-word}
 .b-story__content_type_text,
 .b-story-blocks_with-border {/*[[coltext]]*/}
@@ -587,6 +586,23 @@ div.header-search-box { padding: 0 0 25px 4px; height: 38px; }
 .story__scroll-wrapper_enabled { overflow: visible; }
 .b-community-line { max-width: 195px; }
 .most_comm_post_show { width: 100%!important; padding: 10px 0 0 0!important}
+.community-info,
+.community-desc,
+.b-community-statuses,
+.community-owner {padding-left: 0!important;padding-right: 0!important}
+.community-rules {margin-left: -40px;margin-right: -40px;padding: 10px 40px!important}
+.b-community-info .community-info,
+.b-community-info .community-buttons {text-align: center}
+.community-info > a {display: block!important;margin: 0!important;float: none!important}
+.community-info > a > h2,
+.community-owner > a {color: #28adaa!important}
+.community-info > br {display: none}
+.b-community-info .community-info img {width: 64px!important;height: 64px!important}
+.community-info img,
+.community-owner img {border-radius: 50%!important}
+.b-community-info .community-subs {display: block!important}
+.b-community-info .community-buttons {border-bottom: 1px solid #dbdbdb;padding: 10px 0!important}
+.community-buttons > a {color: #b5b5b5!important;font-size: 12px}
 }
 
 @-moz-document url-prefix("http://pikabu.ru/story/") {
