@@ -40,7 +40,8 @@
 	}
 
 	.b-communities,
-	.b-communities>.coms-top-panel {
+	.b-communities>.coms-top-panel,
+	.b-community-ban-list {
 		padding: 0
 	}
 
@@ -56,7 +57,8 @@
 	}
 
 	table#header_t {
-		background: none!important
+		background: none!important;
+		height: 90px;
 	}
 
 	div#branding_ad_header {
@@ -78,7 +80,8 @@
 	.b-gtpost-builder,
 	.b-sign,
 	.b-community-header,
-	.b-feed-panel.feed-panel-transparent {
+	.b-feed-panel.feed-panel-transparent,
+	.b-community-ban-list {
 		border-radius: 3px;
 		background-color: #fff
 	}
@@ -172,7 +175,8 @@
 	.b-comments__next,
 	#blk-upcoming,
 	.b-story-duplicates,
-	.b-community-header {
+	.b-community-header,
+	.b-community-ban-list {
 		margin-right: 20px!important;
 		margin-left: 80px!important
 	}
@@ -201,7 +205,8 @@
 	.b-sign,
 	.b-gtpost-builder,
 	.b-community-header,
-	.note_wrap {
+	.note_wrap,
+	.b-community-ban-list {
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .29)!important
 	}
 
@@ -392,23 +397,31 @@
 		background: #fffcdd!important;
 		border-color: #f1edbc
 	}
-
+	section.ad-slider > section {
+		background: white!important;
+	}
 	span.story_tag_list {
 		display: inline-block;
 		padding-top: 6px
 	}
-
+	.header-nav tr:last-child {
+		height: 90px
+	}
+	.active4 {
+		display: none;
+	}
 	table.inner_wrap {
 		margin-top: 25px
 	}
-
+	td.header-nav-top {
+		display: none;
+	}
 	.inner_wrap[style="margin-bottom: 20px;"] {
 		margin-top: -15px!important
 	}
 
 	.header-cont {
-		background: #fff;
-		height: 90px
+		background: #fff
 	}
 
 	td.header-nav-bottom {
