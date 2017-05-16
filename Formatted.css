@@ -3,6 +3,18 @@
 		background-image: url(/*[[back]]*/)!important;
 		/*[[back-atch]]*/
 	}
+	a.story__tag[href="http://pikabu.ru/tag/%F4%E5%E9%EA/hot"],
+	a.story__tag[href="http://pikabu.ru/tag/%E6%E5%F1%F2%FC/hot"] {
+		color: #fff;
+		background: #ef5350;
+		border-color: #b71c1c;
+	}
+
+	a.story__tag[href="http://pikabu.ru/tag/%F4%E5%E9%EA/hot"]:hover,
+	a.story__tag[href="http://pikabu.ru/tag/%E6%E5%F1%F2%FC/hot"]:hover{
+		background: #ec7977!important;
+		color: white!important;
+	}
 	#logodiv {
 		background-image: url(http://cs5.pikabu.ru/images/previews_comm/2015-08_3/1439470375184296867.png)!important; 
 		-webkit-background-size: 100% !important;
@@ -59,14 +71,6 @@
 	table#header_t {
 		background: none!important;
 		height: 90px;
-	}
-
-	div#branding_ad_header {
-		display: none
-	}
-
-	.header-cont>a {
-		display: none
 	}
 
 	div#branding_ad_comment {
@@ -173,10 +177,12 @@
 	.b-comments__reply,
 	.b-feed-panel,
 	.b-comments__next,
-	#blk-upcoming,
 	.b-story-duplicates,
 	.b-community-header,
-	.b-community-ban-list {
+	.b-community-ban-list,
+	#ediprofile_menu,
+	.b-profile,
+	.b-scat-setup {
 		margin-right: 20px!important;
 		margin-left: 80px!important
 	}
@@ -206,7 +212,8 @@
 	.b-gtpost-builder,
 	.b-community-header,
 	.note_wrap,
-	.b-community-ban-list {
+	.b-community-ban-list,
+	.b-scat-setup {
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .29)!important
 	}
 
@@ -284,7 +291,8 @@
 	.b-profile,
 	#blk-upcoming a,
 	.inner_wrap>tbody>tr>td[style="padding-left: 50px; padding-right: 0px; text-align: left;"],
-	.inner_wrap>tbody>tr>td[style="padding-left: 30px; padding-right: 0px; text-align: left;"] {
+	.inner_wrap>tbody>tr>td[style="padding-left: 30px; padding-right: 0px; text-align: left;"],
+	.b-scat-setup {
 		border-radius: 3px!important
 	}
 
@@ -404,12 +412,6 @@
 		display: inline-block;
 		padding-top: 6px
 	}
-	.header-nav tr:last-child {
-		height: 90px
-	}
-	.active4 {
-		display: none;
-	}
 	table.inner_wrap {
 		margin-top: 25px
 	}
@@ -423,52 +425,48 @@
 	.header-cont {
 		background: #fff
 	}
+	.header-nav-right,
+	.header-cont>*:not(div) {
+		display: none
+	}
 
 	td.header-nav-bottom {
-		vertical-align: inherit
+		display: flex;
+		align-items: center;
+		height: 90px;
 	}
-
+	.menu-item-default,
 	td.header-nav-bottom>ul.menu {
-		height: 50px
+		height: auto!important;
+		width: auto!important;
+		margin: 0!important;
 	}
 
-	table#header_t ul li {
-		height: 50px
-	}
-
-	table#header_t .menu li a {
-		background: none;
+	.menu-item-default > a {
+		background: none!important;
 		width: 90px!important;
 		border: 1px solid #05bf54!important;
 		border-radius: 3px!important;
 		padding: 14px 12px!important;
-		color: #05bf54;
-		font-size: 15px;
-		height: 20px;
+		color: #05bf54!important;
+		font-size: 15px!important;
+		height: 20px!important;
+		position: relative!important;
+		margin: 0 0 0 20px!important;
 	}
-
-	table#header_t .active,
-	table#header_t .active a {
-		margin: 0 0 0 20px
+	.menu-item-default > a:hover {
+	    background-color: #ececec!important;
 	}
-
-	table#header_t .noactive {
-		margin-left: 20px!important;
-	}
-
-	td.header-nav-bottom>ul.menu>li.menu-item-default {
-		width: 112px
+	.menu-item-default.active > a {
+		color: white!important;
+		background: #05bf54!important;
+		text-shadow: none;
 	}
 
 	.active3,
-	.active2 {
+	.active2,
+	.active4 {
 		display: none
-	}
-
-	table#header_t .menu .active a,
-	table#header_t .menu .active a:hover {
-		background: #05bf54!important;
-		text-shadow: none
 	}
 
 	.b-user-menu {
@@ -1793,10 +1791,6 @@
 		color: #fff!important
 	}
 
-	.b-profile {
-		background: #fff;
-		padding: 20px
-	}
 	.menu-subs-tabs>span {
 	    width: 100%;
 	    padding: 0;
@@ -1949,9 +1943,19 @@
 
 	#ediprofile_menu {
 		height: 40px;
-		padding: 0 0 20px
+		padding: 0 0 20px;
+	    width: auto;
 	}
 
+	.b-profile {
+		background: #fff;
+		padding: 20px;
+	    width: auto;
+	}
+
+	td[style="padding-left: 50px; padding-right: 50px; text-align: left;"] {
+		padding: 0!important;
+	}
 	.i-sprite--feed__rating-trash {
 		background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzMHB4IiB2aWV3Qm94PSIwIDAgMjQgMzAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PHBhdGggZmlsbD0iIzlCOUI5QiIgZD0iTTIxLjg5OTUxMDYsMy41MjkxMjI1OCBMMTcuODUyMDQ1NywzLjUyOTEyMjU4IEwxNy44NTIwNDU3LDAuOTI4NjgzODcxIEMxNy44NTIwNDU3LDAuNDA1MjUxNjEzIDE3LjQyNTAxNzksMCAxNi44OTU2NDc2LDAgQzE2Ljg0NDI4MDYsMCAxNi44MTAwMjI4LDAuMDE2OTU0ODM4NyAxNi43OTMzMDUxLDAuMDMzODcwOTY3NyBDMTYuNzc2MTU2NiwwLjAxNjk1NDgzODcgMTYuNzQxODk4OSwwIDE2LjcyNDc4OTYsMCBMNy4yMTIyMTUzMywwIEw3LjE0NDA5MTM1LDAgTDcuMDc1NTc1ODYsMCBDNi41NDYyMDU1NSwwIDYuMTM2MzI2MjYsMC40MDUyNTE2MTMgNi4xMzYzMjYyNiwwLjkyODY4Mzg3MSBMNi4xMzYzMjYyNiwzLjUyOTE2MTI5IEwyLjA3MTc1MjA0LDMuNTI5MTYxMjkgQzAuOTEwMjM4MTczLDMuNTI5MTYxMjkgMC4wMDUyMDcxNzc4MSw0LjQyMzk3NDE5IDAuMDA1MjA3MTc3ODEsNS41NzIzNzQxOSBMMC4wMDUyMDcxNzc4MSw3LjA1ODMyMjU4IEwwLjAwNTIwNzE3NzgxLDguOTE1NjUxNjEgTDEuNzk4NDczMDgsOC45MTU2NTE2MSBMMS43OTg0NzMwOCwyNy45NDUzMjkgQzEuNzk4NDczMDgsMjkuMDkzNzY3NyAyLjY4NjM5NDc4LDI5Ljk3MTYyNTggMy44NDc5MDg2NSwyOS45NzE2MjU4IEwyMC4xMjMzOTMxLDI5Ljk3MTYyNTggQzIxLjI4NDkwNywyOS45NzE2MjU4IDIyLjE4OTg5ODksMjkuMDkzNzY3NyAyMi4xODk4OTg5LDI3Ljk0NTMyOSBMMjIuMTg5ODk4OSw4LjkxNTY1MTYxIEwyMy45NjYwNTU1LDguOTE1NjUxNjEgTDIzLjk2NjA1NTUsNy4wNTgzMjI1OCBMMjMuOTY2MDU1NSw1LjU3MjM3NDE5IEMyMy45NjYwNTU1LDQuNDIzOTc0MTkgMjMuMDYwNjcyMSwzLjUyOTEyMjU4IDIxLjg5OTUxMDYsMy41MjkxMjI1OCBMMjEuODk5NTEwNiwzLjUyOTEyMjU4IFogTTguMDE0ODY0NiwxLjg1NzMyOTAzIEwxNS45NTYzOTgsMS44NTczMjkwMyBMMTUuOTU2Mzk4LDMuNTI5MTIyNTggTDguMDE0ODY0NiwzLjUyOTEyMjU4IEw4LjAxNDg2NDYsMS44NTczMjkwMyBMOC4wMTQ4NjQ2LDEuODU3MzI5MDMgWiBNMjAuMjk0MjUxMiwyNy45NDUzNjc3IEMyMC4yOTQyNTEyLDI4LjA2Mzg1ODEgMjAuMjQyODg0MiwyOC4xMTQyNTgxIDIwLjEyMzM5MzEsMjguMTE0MjU4MSBMMy44NDc5MDg2NSwyOC4xMTQyNTgxIEMzLjcyODQxNzYyLDI4LjExNDI1ODEgMy42NzcwNTA1NywyOC4wNjM4MTk0IDMuNjc3MDUwNTcsMjcuOTQ1MzY3NyBMMy42NzcwNTA1Nyw4LjkxNTYxMjkgTDIwLjI5NDI1MTIsOC45MTU2MTI5IEwyMC4yOTQyNTEyLDI3Ljk0NTM2NzcgTDIwLjI5NDI1MTIsMjcuOTQ1MzY3NyBaIE0yMi4wNzA0MDc4LDcuMDU4MjgzODcgTDEuOTAwODU0ODEsNy4wNTgyODM4NyBMMS45MDA4NTQ4MSw1LjU3MjMzNTQ4IEMxLjkwMDg1NDgxLDUuNDU0MTU0ODQgMS45NTIyMjE4Niw1LjM4NjQ1MTYxIDIuMDcxNzEyODksNS4zODY0NTE2MSBMMjEuODk5NTEwNiw1LjM4NjQ1MTYxIEMyMi4wMTkwNDA4LDUuMzg2NDUxNjEgMjIuMDcwNDA3OCw1LjQ1NDE1NDg0IDIyLjA3MDQwNzgsNS41NzIzMzU0OCBMMjIuMDcwNDA3OCw3LjA1ODI4Mzg3IEwyMi4wNzA0MDc4LDcuMDU4MjgzODcgWiI+PC9wYXRoPjxnIHN0cm9rZT0iIzlCOUI5QiIgc3Ryb2tlLXdpZHRoPSIyIj48bGluZSB4MT0iMTciIHkxPSIxMSIgeDI9IjE3IiB5Mj0iMjYuNSIvPjxsaW5lIHgxPSIxMiIgeTE9IjExIiB4Mj0iMTIiIHkyPSIyNi41Ii8+PGxpbmUgeDE9IjciIHkxPSIxMSIgeDI9IjciIHkyPSIyNi41Ii8+PC9nPjwvc3ZnPg==) no-repeat;
 		background-size: 17px;
@@ -2040,7 +2044,8 @@
 	}
 
 	div#wrap {
-		width: auto!important
+		/*width: auto!important;*/
+		min-width: 1280px;
 	}
 
 	#add_story_buttons_new span img {
@@ -2553,8 +2558,7 @@
 
 @-moz-document url-prefix("http://pikabu.ru/editprofile.php") {
 	#blk-upcoming {
-		margin-right: -35px!important; 
-		margin-left: 0!important 
+		width: 100%;
 	}
 }
 
